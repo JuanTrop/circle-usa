@@ -15,6 +15,7 @@
     font-family: 'Gill sans';
 }
 
+
 .menu__product--list {
     background-color: var(--main-bg-color);
     display: none;
@@ -62,13 +63,14 @@
 
 .brands__logos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     margin: 3em auto;
 }
 
 .brands img {
-    margin: 0 auto;
-    width: 25%;
+    margin: 1em auto;
+    width: 10em;
+    height: 10em;
 }
 
 .brands__title {
@@ -148,6 +150,10 @@
     margin: 2em 0;
 }
 
+.hideSubList {
+    display: none;
+}
+
 .products__title {
     font-size: 2em;
     text-align: center;
@@ -155,7 +161,7 @@
 }
 
 .section__img {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -184,6 +190,11 @@
     margin-top: 7em;
 }
 
+.title__main{
+    font-family: 'Gill sans';
+    font-size: 2em;
+}
+
 .title--heading *{
     align-self: center;
 }
@@ -200,4 +211,21 @@
 
 .quote__link img {
     width: 7%;
+}
+
+
+@media (max-width: 360px) {
+
+    .products__section {
+        display: block;
+        width: 100%;
+        padding: 0 2em;
+    }
+    
+    .section__img img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 2%;
+    }
 }
