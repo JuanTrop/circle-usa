@@ -278,6 +278,22 @@ h2 {
         border-radius: 2%;
     }
 
+    .section__img {
+        width: 100%;
+    }
+
+    .section__description {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .shown{
+        height: 30%;
+        right: 1.1%;
+        top: 8%;
+    }
+
     .title--heading {
         margin-top: 5em;
     }    
