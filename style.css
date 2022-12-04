@@ -227,6 +227,27 @@ h2 {
 
 @media (max-width: 360px) {
 
+    #logo {
+        width: 20%;
+    }
+
+    #logo img {
+        padding-left: 0.5em;
+    }
+
+    .brands__logos {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1em auto;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    .navigation--bar {
+        font-size: 1em;
+    }
+
     .products__section {
         display: block;
         width: 100%;
@@ -238,5 +259,13 @@ h2 {
         height: auto;
         margin: 0 auto;
         border-radius: 2%;
+    }
+
+    .title--heading {
+        margin-top: 5em;
+    }    
+
+    .title__main {
+        font-size: 1em;
     }
 }
