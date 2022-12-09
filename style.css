@@ -55,6 +55,7 @@ h2 {
 
 #main--banner {
     width: 100%;
+    margin-top: 7em;
     height: auto;
 }
 
@@ -78,7 +79,7 @@ h2 {
 }
 
 .brands__title {
-    color: var(--green-circle);
+    color: rgba(0,0,0,0.7); 
     font-size: var(--titles-size-on-pc);
     text-align: center;
     position: relative;
@@ -181,6 +182,17 @@ h2 {
     background: linear-gradient(147.59deg,#1782ff 4.15%,#78ff00 69.15%,#ffe600 100%);
 }
 
+.title__main::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 100%;
+    bottom: 2px;
+    width: 5px;
+    background: linear-gradient(147.59deg,#1782ff 4.15%,#78ff00 69.15%,#ffe600 100%);
+}
+
+
 .section__img {
     width: 100%;
     display: flex;
@@ -209,13 +221,12 @@ h2 {
     display: flex;
     height: 7em;
     justify-content: space-around;
-    margin-top: 7em;
 }
 
 .title__main{
     font-family: inherit;
     font-size: 2em;
-    font-style: inherit;
+    position: relative;
 }
 
 .title--heading *{
@@ -239,11 +250,16 @@ h2 {
 
 @media only screen and (max-width: 500px)  {
     #logo {
-        width: 20%;
+        width: 40%;
     }
 
     #logo img {
         padding-left: 0.5em;
+        width: 100%;
+    }
+
+    #main--banner {
+        margin-top: 5em;
     }
 
     .brands__logos {
@@ -252,7 +268,7 @@ h2 {
     }
 
     .menu {
-        width: 80%;
+        width: 60%;
     }
 
     .navigation--bar {
@@ -292,11 +308,8 @@ h2 {
         top: 8%;
     }
 
-    .title--heading {
-        margin-top: 5em;
-    }    
-
     .title__main {
         font-size: 1em;
+        margin-left: 1em;
     }
 }
