@@ -68,15 +68,13 @@ h2 {
 }
 
 .brands__logos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 3em auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .brands img {
-    margin: 1em auto;
-    width: 5em;
-    height: 5em;
+    width: 100%;
 }
 
 .brands__title {
